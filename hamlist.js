@@ -1,7 +1,7 @@
 $("body").prepend("<header>");
 $("body").append("<footer>");
 
-$("header").load("inc.html header>nav", head);
+$("header").load("inc.html header", head);
 $("footer").load("inc.html footer>div", foot);
 
 function head() {
@@ -40,6 +40,7 @@ function head() {
     idx = $(this).index();
     localStorage.idx = idx;
   });
+  localStorage.clear();
 }
 
 function foot() {

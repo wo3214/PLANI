@@ -17,6 +17,7 @@ header {
   position: sticky;
   top: 0;
   left: 0;
+  z-index: 999;
 }
 
 header.drop {
@@ -106,4 +107,95 @@ header.drop {
   width: 100%;
   background: white;
   height: 0.13rem;
-}/*# sourceMappingURL=header.css.map */
+}
+
+.ham_menu.heon {
+  opacity: 1;
+  transition: 0.3s;
+  z-index: 999;
+  background-color: white;
+  width: 100%;
+  height: 91vh;
+  transform: translateY(0px);
+  visibility: visible;
+}
+
+.ham_menu {
+  position: absolute;
+  width: 100%;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s;
+  /* display: none; */
+}
+.ham_menu .ham_over {
+  width: 50%;
+  margin-left: 20%;
+  margin-top: 5%;
+  height: 700px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+.ham_menu .ham_over .ham_button.bon {
+  transform: translate(0, -130%);
+}
+.ham_menu .ham_over .ham_button {
+  width: 50%;
+  transform: translate(-130%, -130%);
+  transition: 1.2s;
+}
+.ham_menu .ham_over .ham_button button {
+  background-color: white;
+  font-size: 1.2rem;
+  padding: 1rem 4rem;
+  font-family: "Noto Sans KR";
+  font-weight: bold;
+  border: none;
+  border-bottom: 2px solid black;
+  margin-right: 1rem;
+}
+.ham_menu .ham_over .ham_list.hlon {
+  transform: translateX(0%);
+}
+.ham_menu .ham_over .ham_list {
+  width: 30%;
+  transform: translateX(100%);
+  transition: 1.2s;
+}
+.ham_menu .ham_over .ham_list li {
+  padding: 1.5rem 0;
+}
+.ham_menu .ham_over .ham_list li a {
+  font-size: 2rem;
+  color: #c7c7c7;
+  font-family: "karla";
+  font-weight: bold;
+}
+.ham_menu .ham_over .ham_text.ton {
+  transform: translateX(0%);
+}
+.ham_menu .ham_over .ham_text {
+  transform: translateX(-130%);
+  transition: 1.2s;
+}
+.ham_menu .ham_over .ham_text li span {
+  font-size: 1.3rem;
+  font-family: "karla";
+  color: #999999;
+  font-weight: 500;
+}
+.ham_menu .ham_over .ham_text li p {
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  color: #000;
+  font-family: "Noto Sans KR";
+  font-size: 2.6rem;
+  font-weight: 300;
+}
+.ham_menu .ham_over .ham_text li img {
+  opacity: 0.8;
+}
+
+/*  *//*# sourceMappingURL=header.css.map */
