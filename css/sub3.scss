@@ -1,0 +1,300 @@
+@import url(./reset.css);
+/*  reset css */
+
+/* keyframes  */
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300;1,400;1,500&family=Noto+Sans+KR&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap");
+@font-face {
+  font-family: quentin;
+  src: url(../font/Quentin.woff);
+}
+/* font family */
+$main-font: "karla";
+$kor-font: "Noto Sans KR";
+$point-font: "quentin";
+
+$main-color: #111111;
+$point-color: #04a6e1;
+
+$nomal-size: 1.25rem;
+$middle-size: 2.5rem;
+$bic-size: 4.688rem;
+
+/* 변수 */
+
+.container_nav_box {
+  margin-top: 4rem;
+}
+.container_text_button {
+  width: 65%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1720px;
+  .container_text_box {
+    h2 {
+      font-family: $main-font;
+      font-size: $bic-size;
+      b {
+        color: $point-color;
+      }
+    }
+    span {
+      font-size: $middle-size;
+      font-family: $kor-font;
+      font-weight: 300;
+      display: inline-block;
+      margin-top: 1rem;
+      padding-left: 0.3rem;
+    }
+  }
+
+  .container_button {
+    display: flex;
+    justify-content: space-between;
+    width: 15%;
+
+    li {
+      cursor: pointer;
+      position: relative;
+      width: 40%;
+      &:nth-child(1):hover::after {
+        display: block;
+      }
+      &:nth-child(1)::after {
+        content: "";
+        position: absolute;
+        background-image: url(../images/experience/arrow_left.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        top: -1px;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: none;
+      }
+      &:nth-child(2):hover::after {
+        display: block;
+      }
+      &:nth-child(2)::after {
+        content: "";
+        position: absolute;
+        background-image: url(../images/experience/arrow_right.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        top: -1px;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: none;
+      }
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+/* container_nav_box */
+.content01 {
+  margin-top: 7rem;
+  .content_bg {
+    background-image: url(../images/solution/solution_bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    &::after {
+      content: "";
+      background: linear-gradient(to bottom, white 20%, transparent 70%);
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 100%;
+    }
+    ul {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 100;
+      width: 65%;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      height: 98%;
+
+      li {
+        cursor: pointer;
+        font-family: $main-font;
+        background-color: white;
+        width: 32%;
+        height: 18rem;
+        border-radius: 2.4rem;
+        box-shadow: -2px 6px 23px -16px rgba(133, 125, 243, 0.42);
+        position: relative;
+        overflow: hidden;
+        &::after {
+          content: "";
+          background: linear-gradient(
+            207deg,
+            #e62eff 0%,
+            #5b6bb6 40%,
+            #04a6e1 80%
+          );
+          position: absolute;
+          bottom: -18em;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          transition: 200ms;
+          opacity: 0;
+        }
+        &:hover::after {
+          bottom: 0;
+          opacity: 1;
+          transition: 600ms;
+        }
+        &:hover span {
+          color: aliceblue;
+          transition: 800ms;
+        }
+        &:hover p {
+          letter-spacing: -0.1rem;
+          color: white;
+          transition: 600ms;
+        }
+        &:hover i {
+          color: white;
+          transition: 500ms;
+        }
+        span {
+          color: $point-color;
+          font-weight: bold;
+          font-size: 1rem;
+          margin-top: 3.5rem;
+          margin-left: 2rem;
+          display: block;
+          position: relative;
+          z-index: 1;
+        }
+        p {
+          font-size: 1.5rem;
+          font-weight: 400;
+          font-family: $kor-font;
+          display: block;
+          margin-top: 1rem;
+          margin-left: 2rem;
+          position: relative;
+          z-index: 1;
+        }
+        i {
+          color: rgb(168, 168, 168);
+          font-size: 1.3rem;
+          display: block;
+          margin-top: 3.5rem;
+          margin-left: 2rem;
+          position: relative;
+          z-index: 1;
+        }
+      }
+    }
+  }
+}
+/* content01 */
+footer {
+  margin-top: 4rem;
+  padding-bottom: 2rem;
+  .footer_box {
+    width: 64%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    font-family: $kor-font;
+    font-size: 1rem;
+    padding-top: 3rem 0;
+    max-width: 1720px;
+
+    p {
+      color: #999999;
+    }
+    b {
+      color: #000;
+      font-weight: bold;
+    }
+    .footer_button {
+      width: 12rem;
+      background-color: transparent;
+      border: 1px solid #c7c7c7;
+      padding: 0.8rem 0.7rem;
+      border-radius: 0.5rem;
+      font-size: 0.8rem;
+      cursor: pointer;
+      position: relative;
+      .text_icon {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        span,
+        i {
+          font-size: 0.8rem;
+          color: #767676;
+          transition: all 300ms ease;
+        }
+        i.ion {
+          transform: rotate(45deg);
+          transition: all 300ms ease;
+        }
+      }
+
+      li {
+        color: #767676;
+        transition: all 300ms ease;
+        a {
+          color: #767676;
+        }
+      }
+    }
+    .button_over {
+      position: absolute;
+      width: 100%;
+      height: 15rem;
+      left: 0;
+      top: -550%;
+      overflow: hidden;
+      .button_list.on {
+        transform: translateY(0px);
+        transition: all 900ms ease;
+        z-index: 999;
+      }
+      .button_list {
+        background-color: white;
+        border-radius: 2%;
+        border: 1px solid #c7c7c7;
+        width: 100%;
+        height: 15rem;
+        transform: translateY(245px);
+        transition: all 900ms ease;
+        display: flex;
+        flex-direction: column;
+        align-content: space-between;
+        position: relative;
+        z-index: 999;
+
+        li {
+          width: 100%;
+          height: 100%;
+
+          a {
+            font-family: $kor-font;
+            font-size: 1rem;
+            padding: 1.2rem 0.3rem;
+          }
+        }
+      }
+    }
+  }
+}
+/* footer */
+@import "./sub3_media.scss";

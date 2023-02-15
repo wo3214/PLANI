@@ -1,0 +1,254 @@
+@import url(./reset.css);
+/*  reset css */
+@keyframes middle_line {
+  0% {
+    background: #000;
+    width: 0%;
+    left: 0;
+  }
+  50% {
+    background-color: #04a6e1;
+    width: 50%;
+    left: 0;
+  }
+  100% {
+    background-color: #04a6e1;
+    width: 100%;
+    left: 0;
+  }
+}
+/* keyframes  */
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300;1,400;1,500&family=Noto+Sans+KR&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap");
+@font-face {
+  font-family: quentin;
+  src: url(../font/Quentin.woff);
+}
+/* font family */
+$main-font: "karla";
+$kor-font: "Noto Sans KR";
+$point-font: "quentin";
+
+$main-color: #111111;
+$point-color: #04a6e1;
+
+$nomal-size: 1.25rem;
+$middle-size: 2.5rem;
+$bic-size: 4.688rem;
+
+/* 변수 */
+
+.main_container {
+  display: flex;
+  align-items: center;
+  height: 80vh;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+
+  &::after {
+    content: "";
+    width: 100%;
+    height: 1.2px;
+    background: rgb(219, 219, 219);
+    position: absolute;
+    left: 0;
+    z-index: -2;
+  }
+  .container_side_btn {
+    background-color: #111111;
+    width: 7.3rem;
+    height: 7.3rem;
+    border-radius: 50%;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-family: $kor-font;
+    margin-right: 4rem;
+  }
+  .middle_line {
+    background: gray;
+    width: 100%;
+    height: 1.5px;
+    position: absolute;
+    z-index: -1;
+    animation: middle_line 5s;
+    animation-iteration-count: infinite;
+    /* animation-fill-mode: inherit; */
+  }
+
+  .main_inner {
+    width: 76%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1820px;
+
+    .main_text {
+      .slide_text {
+        display: flex;
+        justify-content: space-between;
+
+        width: 40rem;
+        overflow: hidden;
+        height: 5.1rem;
+        /*  margin-bottom: 2%; */
+        /*  border: 1px solid black; */
+        align-items: center;
+        span {
+          width: 34%;
+        }
+
+        ul {
+          width: 35%;
+          /* overflow: hidden; */
+          /*  height: 5rem; */
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          background-color: white;
+
+          li {
+            display: inline-block;
+            width: 100%;
+            height: 100%;
+            text-align: left;
+
+            line-height: 100%;
+          }
+        }
+      }
+      span {
+        width: 100%;
+        font-family: $kor-font;
+        display: inline-block;
+        font-size: $bic-size;
+        color: $main-color;
+        padding: 0.3rem 0;
+        font-weight: bold;
+
+        b {
+          color: $point-color;
+        }
+      }
+    }
+    .sub_text {
+      position: relative;
+      span {
+        display: block;
+        color: $point-color;
+        font-size: 13rem;
+        font-family: $point-font;
+        transform: rotate(-8deg);
+      }
+      p {
+        text-align: right;
+        line-height: 2.5rem;
+        text-decoration: underline;
+        font-size: $nomal-size;
+        letter-spacing: -0.1rem;
+        color: #555;
+        position: absolute;
+        right: 0;
+        bottom: -5rem;
+        font-weight: 400;
+        font-family: $kor-font;
+      }
+    }
+  }
+}
+
+/* main */
+
+footer {
+  .footer_box {
+    width: 64%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    font-family: $kor-font;
+    font-size: 1rem;
+    padding-top: 3rem 0;
+    max-width: 1720px;
+
+    p {
+      color: #999999;
+    }
+    b {
+      color: #000;
+      font-weight: bold;
+    }
+    .footer_button {
+      width: 12rem;
+      background-color: transparent;
+      border: 1px solid #c7c7c7;
+      padding: 0.8rem 0.7rem;
+      border-radius: 0.5rem;
+      font-size: 0.8rem;
+      cursor: pointer;
+      position: relative;
+      .text_icon {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        span,
+        i {
+          font-size: 0.8rem;
+          color: #767676;
+          transition: all 300ms ease;
+        }
+        i.ion {
+          transform: rotate(45deg);
+          transition: all 300ms ease;
+        }
+      }
+
+      li {
+        color: #767676;
+        transition: all 300ms ease;
+        a {
+          color: #767676;
+        }
+      }
+    }
+    .button_over {
+      position: absolute;
+      width: 100%;
+      height: 15rem;
+      left: 0;
+      top: -550%;
+      overflow: hidden;
+      .button_list.on {
+        transform: translateY(0px);
+        transition: all 900ms ease;
+      }
+      .button_list {
+        background-color: white;
+        border-radius: 2%;
+        border: 1px solid #c7c7c7;
+        width: 100%;
+        height: 15rem;
+        transform: translateY(245px);
+        transition: all 900ms ease;
+        display: flex;
+        flex-direction: column;
+        align-content: space-between;
+        li {
+          width: 100%;
+          height: 100%;
+
+          a {
+            font-family: $kor-font;
+            font-size: 1rem;
+            padding: 1.2rem 0.3rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* footer */
+
+/* 반응형 */
+@import "./main_media.scss";

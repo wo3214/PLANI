@@ -1,0 +1,690 @@
+@import url(./reset.css);
+/*  reset css */
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300;1,400;1,500&family=Noto+Sans+KR&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap");
+@-webkit-keyframes middle_line {
+  0% {
+    background: #000;
+    width: 0%;
+    left: 0;
+  }
+  50% {
+    background-color: #04a6e1;
+    width: 50%;
+    left: 0;
+  }
+  100% {
+    background-color: #04a6e1;
+    width: 100%;
+    left: 0;
+  }
+}
+@keyframes middle_line {
+  0% {
+    background: #000;
+    width: 0%;
+    left: 0;
+  }
+  50% {
+    background-color: #04a6e1;
+    width: 50%;
+    left: 0;
+  }
+  100% {
+    background-color: #04a6e1;
+    width: 100%;
+    left: 0;
+  }
+}
+/* keyframes  */
+@font-face {
+  font-family: quentin;
+  src: url(../font/Quentin.woff);
+}
+/* font family */
+@media (max-width: 1700px) {
+  html {
+    font-size: 12px;
+  }
+  .header_main .header_menu_btn {
+    background: #000;
+    width: 3.8rem;
+    height: 3.8rem;
+    border-radius: 50%;
+  }
+  .header_main .header_menu_btn ul {
+    width: 50%;
+    height: 22%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .header_main .header_menu_btn ul li {
+    width: 100%;
+    background: white;
+    height: 0.13rem;
+  }
+}
+/* =================================PC */
+@media (max-width: 1280px) {
+  html {
+    font-size: 11px;
+  }
+  .header_main {
+    display: flex;
+    width: 94%;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 1.25rem 0;
+  }
+  .header_main .logo a {
+    display: block;
+    width: 6.938rem;
+    height: 2.5rem;
+    background-image: url(../images/main/logo.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+  .header_main .header_menu_btn {
+    background: #000;
+    width: 3.8rem;
+    height: 3.8rem;
+    border-radius: 50%;
+  }
+  .header_main .header_menu_btn ul {
+    width: 50%;
+    height: 22%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .header_main .header_menu_btn ul li {
+    width: 100%;
+    background: white;
+    height: 0.13rem;
+  }
+  /* header */
+  .main_container {
+    display: flex;
+    align-items: center;
+    height: 80vh;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .main_container::after {
+    content: "";
+    width: 100%;
+    height: 1.2px;
+    background: rgb(219, 219, 219);
+    position: absolute;
+    left: 0;
+    z-index: -2;
+  }
+  .main_container .container_side_btn {
+    background-color: #111111;
+    width: 7.3rem;
+    height: 7.3rem;
+    border-radius: 50%;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-family: "Noto Sans KR";
+    margin-right: 4rem;
+  }
+  .main_container .middle_line {
+    background: gray;
+    width: 100%;
+    height: 1.5px;
+    position: absolute;
+    z-index: -1;
+    -webkit-animation-name: middle_line;
+            animation-name: middle_line;
+    -webkit-animation-duration: 3s;
+            animation-duration: 3s;
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+    -webkit-animation-direction: alternate;
+            animation-direction: alternate;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-fill-mode: inherit;
+            animation-fill-mode: inherit;
+  }
+  .main_container .main_inner {
+    width: 76%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1820px;
+  }
+  .main_container .main_inner .main_text span {
+    width: 100%;
+    font-family: "Noto Sans KR";
+    display: inline-block;
+    font-size: 4.688rem;
+    color: #111111;
+    padding: 0.3rem 0;
+    font-weight: bold;
+  }
+  .main_container .main_inner .main_text span b {
+    color: #04a6e1;
+  }
+  .main_container .main_inner .sub_text {
+    position: relative;
+  }
+  .main_container .main_inner .sub_text span {
+    display: block;
+    color: #04a6e1;
+    font-size: 10rem;
+    font-family: "quentin";
+    transform: rotate(-8deg);
+    -webkit-animation-name: pointtitle;
+            animation-name: pointtitle;
+    -webkit-animation-duration: 6s;
+            animation-duration: 6s;
+    -webkit-animation-timing-function: ease;
+            animation-timing-function: ease;
+  }
+  .main_container .main_inner .sub_text p {
+    text-align: right;
+    line-height: 2.5rem;
+    text-decoration: underline;
+    font-size: 1.25rem;
+    letter-spacing: -0.1rem;
+    color: #555;
+    position: absolute;
+    right: 0;
+    bottom: -5rem;
+    font-weight: 400;
+    font-family: "Noto Sans KR";
+  }
+}
+/* ====================================pc2 */
+@media (max-width: 1000px) {
+  .header_main {
+    display: flex;
+    width: 94%;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 1.25rem 0;
+  }
+  .header_main .logo a {
+    display: block;
+    width: 6.938rem;
+    height: 2.5rem;
+    background-image: url(../images/main/logo.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+  .header_main .header_menu_btn {
+    background: #000;
+    width: 3.3rem;
+    height: 3.3rem;
+    border-radius: 50%;
+  }
+  .header_main .header_menu_btn ul {
+    width: 50%;
+    height: 22%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .header_main .header_menu_btn ul li {
+    width: 100%;
+    background: white;
+    height: 0.13rem;
+  }
+  /* header */
+  .main_container {
+    display: flex;
+    align-items: center;
+    height: 80vh;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    flex-direction: column;
+  }
+  .main_container::after {
+    content: "";
+    width: 100%;
+    height: 1.2px;
+    background: rgb(219, 219, 219);
+    position: absolute;
+    top: 168px;
+    left: 0;
+    z-index: -2;
+  }
+  .main_container .container_side_btn {
+    background-color: #111111;
+    width: 7.3rem;
+    height: 7.3rem;
+    border-radius: 50%;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-family: "Noto Sans KR";
+    margin-right: 4rem;
+    position: absolute;
+    top: 124px;
+    left: 30%;
+  }
+  .main_container .middle_line {
+    background: gray;
+    width: 100%;
+    height: 1.5px;
+    position: absolute;
+    top: 168px;
+    z-index: -1;
+    -webkit-animation-name: middle_line;
+            animation-name: middle_line;
+    -webkit-animation-duration: 3s;
+            animation-duration: 3s;
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+    -webkit-animation-direction: alternate;
+            animation-direction: alternate;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-fill-mode: inherit;
+            animation-fill-mode: inherit;
+  }
+  .main_container .main_inner {
+    width: 76%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1820px;
+  }
+  .main_container .main_inner .main_text {
+    position: absolute;
+    top: 85px;
+    left: 42%;
+  }
+  .main_container .main_inner .main_text span {
+    width: 100%;
+    font-family: "Noto Sans KR";
+    display: inline-block;
+    font-size: 4.688rem;
+    color: #111111;
+    padding: 0.3rem 0;
+    font-weight: bold;
+  }
+  .main_container .main_inner .main_text span b {
+    color: #04a6e1;
+  }
+  .main_container .main_inner .sub_text {
+    position: relative;
+    text-align: center;
+    width: 100%;
+  }
+  .main_container .main_inner .sub_text span {
+    display: block;
+    color: #04a6e1;
+    font-size: 13rem;
+    font-family: "quentin";
+    transform: rotate(0deg);
+    position: absolute;
+    top: 50px;
+    left: 10%;
+    width: 600px;
+  }
+  .main_container .main_inner .sub_text p {
+    width: 300px;
+    line-height: 2.5rem;
+    text-decoration: underline;
+    font-size: 1.25rem;
+    letter-spacing: -0.1rem;
+    color: #555;
+    font-weight: 400;
+    font-family: "Noto Sans KR";
+    text-align: center;
+    display: block;
+    position: absolute;
+    top: -80px;
+    left: 30%;
+  }
+  /* main */
+  footer .footer_box {
+    width: 80%;
+  }
+}
+/* ==============================tablet */
+@media (max-width: 768px) and (max-width: 1000px) {
+  .header_main {
+    display: flex;
+    width: 94%;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 1.25rem 0;
+  }
+  .header_main .logo a {
+    display: block;
+    width: 6.938rem;
+    height: 2.5rem;
+    background-image: url(../images/main/logo.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+  .header_main .header_menu_bar {
+    display: none;
+  }
+  .header_main .header_menu_btn {
+    background: #000;
+    width: 3.3rem;
+    height: 3.3rem;
+    border-radius: 50%;
+  }
+  .header_main .header_menu_btn ul {
+    width: 50%;
+    height: 22%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .header_main .header_menu_btn ul li {
+    width: 100%;
+    background: white;
+    height: 0.13rem;
+  }
+  /* header */
+  .main_container {
+    display: flex;
+    align-items: center;
+    height: 80vh;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    flex-direction: column;
+  }
+  .main_container::after {
+    content: "";
+    width: 100%;
+    height: 1.2px;
+    background: rgb(219, 219, 219);
+    position: absolute;
+    left: 0;
+    z-index: -2;
+  }
+  .main_container .container_side_btn {
+    background-color: #111111;
+    width: 7.3rem;
+    height: 7.3rem;
+    border-radius: 50%;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-family: "Noto Sans KR";
+    margin-right: 4rem;
+    position: absolute;
+    left: 30%;
+  }
+  .main_container .middle_line {
+    background: gray;
+    width: 100%;
+    height: 1.5px;
+    position: absolute;
+    z-index: -1;
+    -webkit-animation-name: middle_line;
+            animation-name: middle_line;
+    -webkit-animation-duration: 3s;
+            animation-duration: 3s;
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+    -webkit-animation-direction: alternate;
+            animation-direction: alternate;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-fill-mode: inherit;
+            animation-fill-mode: inherit;
+  }
+  .main_container .main_inner {
+    width: 76%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1820px;
+  }
+  .main_container .main_inner .main_text {
+    position: absolute;
+    left: 42%;
+  }
+  .main_container .main_inner .main_text span {
+    width: 100%;
+    font-family: "Noto Sans KR";
+    display: inline-block;
+    font-size: 4.688rem;
+    color: #111111;
+    padding: 0.3rem 0;
+    font-weight: bold;
+  }
+  .main_container .main_inner .main_text span b {
+    color: #04a6e1;
+  }
+  .main_container .main_inner .sub_text {
+    position: relative;
+    text-align: center;
+    width: 100%;
+  }
+  .main_container .main_inner .sub_text span {
+    display: block;
+    color: #04a6e1;
+    font-size: 13rem;
+    font-family: "quentin";
+    transform: rotate(0deg);
+    position: absolute;
+    top: 50px;
+    left: 3%;
+    width: 600px;
+  }
+  .main_container .main_inner .sub_text p {
+    width: 300px;
+    line-height: 2.5rem;
+    text-decoration: underline;
+    font-size: 1.25rem;
+    letter-spacing: -0.1rem;
+    color: #555;
+    font-weight: 400;
+    font-family: "Noto Sans KR";
+    text-align: center;
+    display: block;
+    position: absolute;
+    top: -80px;
+    left: 30%;
+  }
+  /* main */
+  footer .footer_box {
+    width: 90%;
+  }
+  /* footer */
+}
+/* ==============================================mobile */
+@media (max-width: 640px) and (max-width: 1000px) {
+  .header_main {
+    display: flex;
+    width: 94%;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 1.25rem 0;
+  }
+  .header_main .logo a {
+    display: block;
+    width: 6.938rem;
+    height: 2.5rem;
+    background-image: url(../images/main/logo.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+  .header_main .header_menu_bar {
+    display: none;
+  }
+  .header_main .header_menu_btn {
+    background: #000;
+    width: 3.3rem;
+    height: 3.3rem;
+    border-radius: 50%;
+  }
+  .header_main .header_menu_btn ul {
+    width: 50%;
+    height: 22%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .header_main .header_menu_btn ul li {
+    width: 100%;
+    background: white;
+    height: 0.13rem;
+  }
+  /* header */
+  .main_container {
+    display: flex;
+    align-items: center;
+    height: 80vh;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    flex-direction: column;
+  }
+  .main_container::after {
+    content: "";
+    width: 100%;
+    height: 1.2px;
+    background: rgb(219, 219, 219);
+    position: absolute;
+    left: 0;
+    z-index: -2;
+  }
+  .main_container .container_side_btn {
+    background-color: #111111;
+    width: 7.3rem;
+    height: 7.3rem;
+    border-radius: 50%;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-family: "Noto Sans KR";
+    margin-right: 4rem;
+    position: absolute;
+    left: 30%;
+    display: none;
+  }
+  .main_container .middle_line {
+    background: gray;
+    width: 100%;
+    height: 1.5px;
+    position: absolute;
+    z-index: -1;
+    -webkit-animation-name: middle_line;
+            animation-name: middle_line;
+    -webkit-animation-duration: 3s;
+            animation-duration: 3s;
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+    -webkit-animation-direction: alternate;
+            animation-direction: alternate;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-fill-mode: inherit;
+            animation-fill-mode: inherit;
+  }
+  .main_container .main_inner {
+    width: 76%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1820px;
+  }
+  .main_container .main_inner .main_text {
+    position: absolute;
+    left: 15%;
+    text-align: center;
+  }
+  .main_container .main_inner .main_text span {
+    width: 100%;
+    font-family: "Noto Sans KR";
+    display: inline-block;
+    font-size: 4.688rem;
+    color: #111111;
+    padding: 0.3rem 0;
+    font-weight: bold;
+  }
+  .main_container .main_inner .main_text span b {
+    color: #04a6e1;
+  }
+  .main_container .main_inner .sub_text {
+    position: absolute;
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+  }
+  .main_container .main_inner .sub_text span {
+    display: block;
+    color: #04a6e1;
+    font-size: 10rem;
+    font-family: "quentin";
+    transform: rotate(0deg);
+    position: absolute;
+    top: 50px;
+    left: -8%;
+    width: 600px;
+  }
+  .main_container .main_inner .sub_text p {
+    width: 300px;
+    line-height: 2.5rem;
+    text-decoration: underline;
+    font-size: 1.25rem;
+    letter-spacing: -0.1rem;
+    color: #555;
+    font-weight: 400;
+    font-family: "Noto Sans KR";
+    text-align: center;
+    display: block;
+    position: absolute;
+    top: -80px;
+    left: 22%;
+  }
+  /* main */
+  footer .footer_box {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  footer .footer_box .footer_button {
+    margin: 0 auto;
+    margin-top: 1rem;
+  }
+}
+/* ===================================mobile_mini */
+@media (max-width: 610px) {
+  .main_container .main_inner .sub_text span {
+    font-size: 8rem;
+    width: 550px;
+  }
+}
+@media (max-width: 580px) {
+  .main_container .main_inner .sub_text span {
+    font-size: 6rem;
+    /* width: 400px; */
+  }
+}
+@media (max-width: 520px) {
+  .main_container .main_inner .sub_text span {
+    width: 400px;
+  }
+}
+/*  =============================== 610 --- 520 text *//*# sourceMappingURL=main_media.css.map */

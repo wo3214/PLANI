@@ -1,0 +1,16 @@
+$mobile: 768px;
+$tablet: 1000px;
+$pc01: 1280px;
+$pc: 1700px;
+
+@mixin device($min, $max) {
+  @media (min-width: $min) and (max-width: $max) {
+    @content;
+  }
+}
+
+@include device($mobile, $tablet) {
+}
+
+@include deive($tablet, 1024px) {
+} ;

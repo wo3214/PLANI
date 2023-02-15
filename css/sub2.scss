@@ -1,0 +1,219 @@
+@import url(./reset.css);
+/*  reset css */
+
+/* keyframes  */
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300;1,400;1,500&family=Noto+Sans+KR&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap");
+@font-face {
+  font-family: quentin;
+  src: url(../font/Quentin.woff);
+}
+/* font family */
+$main-font: "karla";
+$kor-font: "Noto Sans KR";
+$point-font: "quentin";
+
+$main-color: #111111;
+$point-color: #04a6e1;
+
+$nomal-size: 1.25rem;
+$middle-size: 2.5rem;
+$bic-size: 4.688rem;
+
+/* 변수 */
+
+.container_nav_box {
+  margin-top: 4rem;
+}
+.container_text_button {
+  width: 65%;
+  margin: 0 auto;
+  /* display: flex; */
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1720px;
+  h2 {
+    font-family: $main-font;
+    font-size: $bic-size;
+    b {
+      color: $point-color;
+    }
+  }
+  span {
+    font-size: $middle-size;
+    font-family: $kor-font;
+    display: inline-block;
+    font-weight: 300;
+    margin-top: 1rem;
+    padding-left: 0.3rem;
+  }
+}
+/* container_nav_box */
+.container02_box {
+  margin-top: 5rem;
+  div {
+    width: 89%;
+    margin: 0 auto;
+    .position_box {
+      width: 100%;
+      position: relative;
+    }
+    img {
+      width: 100%;
+      height: 100%;
+    }
+    a {
+      background: #000;
+      color: white;
+      padding: 0.6em 1em;
+      font-size: 1.1rem;
+      border-radius: 1rem;
+      &:hover {
+        background-color: #04a6e1;
+        transform: translateY(-10%);
+        transition: all 300ms ease;
+      }
+      &:hover i {
+        color: #04a6e1;
+        transition: all 300ms ease;
+      }
+      span {
+        position: relative;
+      }
+      i {
+        position: absolute;
+        bottom: -85%;
+        left: 50%;
+        transform: translateX(-50%);
+        color: #000;
+      }
+    }
+    .btn01 {
+      position: absolute;
+      top: 58%;
+      left: 14.8%;
+    }
+    .btn02 {
+      position: absolute;
+      top: 46%;
+      left: 27.8%;
+    }
+    .btn03 {
+      position: absolute;
+      top: 48%;
+      left: 41.5%;
+    }
+    .btn04 {
+      position: absolute;
+      top: 30%;
+      left: 43%;
+    }
+    .btn05 {
+      position: absolute;
+      top: 60%;
+      left: 51%;
+    }
+    .btn06 {
+      position: absolute;
+      top: 60%;
+      left: 70%;
+    }
+    .btn07 {
+      position: absolute;
+      top: 43%;
+      left: 65%;
+    }
+  }
+}
+/* cotainer02_box */
+footer {
+  margin-top: 4rem;
+  padding-bottom: 2rem;
+  .footer_box {
+    width: 64%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    font-family: $kor-font;
+    font-size: 1rem;
+    padding-top: 3rem 0;
+    max-width: 1720px;
+
+    p {
+      color: #999999;
+    }
+    b {
+      color: #000;
+      font-weight: bold;
+    }
+    .footer_button {
+      width: 12rem;
+      background-color: transparent;
+      border: 1px solid #c7c7c7;
+      padding: 0.8rem 0.7rem;
+      border-radius: 0.5rem;
+      font-size: 0.8rem;
+      cursor: pointer;
+      position: relative;
+      .text_icon {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        span,
+        i {
+          font-size: 0.8rem;
+          color: #767676;
+          transition: all 300ms ease;
+        }
+        i.ion {
+          transform: rotate(45deg);
+          transition: all 300ms ease;
+        }
+      }
+
+      li {
+        color: #767676;
+        transition: all 300ms ease;
+        a {
+          color: #767676;
+        }
+      }
+    }
+    .button_over {
+      position: absolute;
+      width: 100%;
+      height: 15rem;
+      left: 0;
+      top: -550%;
+      overflow: hidden;
+      .button_list.on {
+        transform: translateY(0px);
+        transition: all 900ms ease;
+      }
+      .button_list {
+        background-color: white;
+        border-radius: 2%;
+        border: 1px solid #c7c7c7;
+        width: 100%;
+        height: 15rem;
+        transform: translateY(245px);
+        transition: all 900ms ease;
+        display: flex;
+        flex-direction: column;
+        align-content: space-between;
+        li {
+          width: 100%;
+          height: 100%;
+
+          a {
+            font-family: $kor-font;
+            font-size: 1rem;
+            padding: 1.2rem 0.3rem;
+          }
+        }
+      }
+    }
+  }
+}
+/* footer */
+@import "./sub2_media.scss";

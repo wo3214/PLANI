@@ -1,0 +1,296 @@
+$mobile_mini: 640px;
+$mobile: 768px;
+$tablet: 1000px;
+$pc2: 1280px;
+$pc: 1700px;
+@import "./variable.scss";
+
+@mixin device($max) {
+  @media (max-width: $max) {
+    @content;
+  }
+}
+/* ======================================================== */
+
+@include device($pc) {
+  html {
+    font-size: 12px;
+  }
+  .header_main {
+    .header_menu_btn {
+      background: #000;
+      width: 3.8rem;
+      height: 3.8rem;
+      border-radius: 50%;
+      ul {
+        width: 50%;
+        height: 22%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        li {
+          width: 100%;
+          background: white;
+          height: 0.13rem;
+        }
+      }
+    }
+  }
+  /* header */
+
+  .container_list {
+    .container_list_box {
+      li {
+        height: 15rem;
+        p {
+          padding-top: 1.2rem;
+        }
+      }
+    }
+  }
+  /* container_list */
+  .container_inner {
+    .bg_box {
+      height: 100vh;
+    }
+    .container_BG {
+      height: 100vh;
+    }
+  }
+}
+
+/* ======================================PC */
+
+@include device($pc2) {
+  html {
+    font-size: 11px;
+  }
+  .header_main {
+    display: flex;
+    width: 94%;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 1.25rem 0;
+    .logo {
+      a {
+        display: block;
+        width: 6.938rem;
+        height: 2.5rem;
+        background-image: url(../images/main/logo.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+      }
+    }
+    .header_menu_btn {
+      background: #000;
+      width: 3.8rem;
+      height: 3.8rem;
+      border-radius: 50%;
+      ul {
+        width: 50%;
+        height: 22%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        li {
+          width: 100%;
+          background: white;
+          height: 0.13rem;
+        }
+      }
+    }
+  }
+  /* header */
+  .container_nav_box {
+    .container_text_button {
+      width: 75%;
+    }
+  }
+  /* container_nav_box */
+  .container_list {
+    .container_list_box {
+      width: 75%;
+    }
+  }
+  /* contianer_list */
+  .container_inner {
+    .bg_box {
+      height: 103vh;
+    }
+    .container_BG {
+      height: 103vh;
+
+      &::before {
+        left: 17%;
+      }
+    }
+  }
+  /* contianer_inner */
+  footer {
+    .footer_box {
+      width: 75%;
+    }
+  }
+}
+
+/* =================================pc2 */
+
+@include device($tablet) {
+  .header_main {
+    display: flex;
+    width: 94%;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 1.25rem 0;
+    .logo {
+      a {
+        display: block;
+        width: 6.938rem;
+        height: 2.5rem;
+        background-image: url(../images/main/logo.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+      }
+    }
+    .header_menu_btn {
+      background: #000;
+      width: 3.3rem;
+      height: 3.3rem;
+      border-radius: 50%;
+      ul {
+        width: 50%;
+        height: 22%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        li {
+          width: 100%;
+          background: white;
+          height: 0.13rem;
+        }
+      }
+    }
+  }
+  /* header */
+  .container_nav_box {
+    .container_text_button {
+      width: 90%;
+    }
+  }
+  /* container_nav_box */
+  .container_list {
+    .container_list_box {
+      width: 90%;
+    }
+  }
+  /* contianer_list */
+  .container_inner {
+    .bg_box {
+      height: 106vh;
+    }
+    .container_BG {
+      height: 106vh;
+
+      &::before {
+        left: 11%;
+      }
+      .container_inner_box {
+        width: 90%;
+      }
+      .text_list {
+        width: 90%;
+      }
+    }
+  }
+  /* container */
+  footer {
+    .footer_box {
+      width: 90%;
+    }
+  }
+}
+
+/* ===========================================tablet */
+
+@include device($mobile) {
+  .header_main {
+    .header_menu_bar {
+      display: none;
+    }
+  }
+  /*  header */
+  .container_list {
+    overflow: scroll;
+    .container_list_box {
+      width: 120%;
+      padding-bottom: 1rem;
+    }
+  }
+  /* contianer_list */
+  .container_inner {
+    .bg_box {
+      height: 155vh;
+    }
+    .container_BG {
+      height: 155vh;
+
+      &::before {
+        left: 7%;
+      }
+      .container_inner_box {
+        width: 90%;
+        h2 {
+        }
+        .container_item {
+          flex-direction: column-reverse;
+          p {
+            width: 90%;
+            font-size: 1.3rem;
+            text-align: left;
+          }
+        }
+      }
+      .container_img_box {
+        width: 70%;
+        margin: 0 auto;
+
+        img {
+        }
+      }
+      .text_list {
+        flex-wrap: wrap;
+        width: 90%;
+
+        li {
+          width: 30%;
+          margin-top: 2rem;
+          &:last-child {
+            margin-right: 36%;
+          }
+        }
+      }
+    }
+  }
+  /* container */
+  footer {
+    .footer_box {
+      width: 90%;
+      flex-wrap: wrap;
+      font-size: 1.2rem;
+
+      .footer_button {
+        margin: 0 auto;
+        margin-top: 1rem;
+      }
+    }
+  }
+}
+
+/* ==========================================mobile */

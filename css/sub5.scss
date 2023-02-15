@@ -1,0 +1,267 @@
+@import url(./reset.css);
+/*  reset css */
+
+/* keyframes  */
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300;1,400;1,500&family=Noto+Sans+KR&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap");
+@font-face {
+  font-family: quentin;
+  src: url(../font/Quentin.woff);
+}
+/* font family */
+$main-font: "karla";
+$kor-font: "Noto Sans KR";
+$point-font: "quentin";
+
+$main-color: #111111;
+$point-color: #04a6e1;
+
+$nomal-size: 1.25rem;
+$middle-size: 2.5rem;
+$bic-size: 4.688rem;
+
+/* 변수 */
+
+.container_nav_box {
+  padding-top: 4rem;
+  background-color: $point-color;
+
+  .container_text_button {
+    width: 65%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1720px;
+    h2 {
+      font-family: $main-font;
+      font-size: $bic-size;
+      color: white;
+      b {
+        color: white;
+      }
+    }
+  }
+}
+/* container_nav */
+.banner {
+  background-color: $point-color;
+  width: 100%;
+  height: 44vh;
+  .banner_content {
+    width: 65%;
+    height: 400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    .banner_text_box {
+      width: 45%;
+      color: white;
+      font-family: $kor-font;
+      h3 {
+        padding-top: 1rem;
+        font-size: 2.55rem;
+        font-weight: 300;
+      }
+      p {
+        padding-top: 1.8rem;
+        opacity: 0.7;
+        font-size: 1.3rem;
+      }
+      span {
+        display: inline-block;
+        padding-top: 3rem;
+      }
+    }
+    .banner_img_box {
+      display: flex;
+      justify-content: space-between;
+      width: 48%;
+      align-items: center;
+      .slide_btn {
+        width: 5%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        li {
+          margin: 0.53rem 0;
+          cursor: pointer;
+
+          &:nth-child(1) {
+            margin-bottom: 1rem;
+          }
+          &:last-child {
+            margin-top: 1rem;
+          }
+          img {
+            width: 100%;
+          }
+        }
+        .radius_btn {
+          width: 0.55rem;
+          height: 0.55rem;
+          background-color: white;
+          border-radius: 50%;
+          display: inline-block;
+          opacity: 0.7;
+          &:hover {
+            border: 0.3rem solid white;
+            opacity: 1;
+            width: 1.05rem;
+            height: 1.05rem;
+            background-color: #04a6e1;
+          }
+        }
+      }
+      .banner_img {
+        width: 90%;
+        li {
+          width: 97%;
+          img {
+            width: 100%;
+            height: 100%;
+            border-radius: 18%;
+            box-shadow: -1px 7px 15px -3px rgba(84, 123, 217, 0.19);
+          }
+        }
+      }
+    }
+  }
+}
+/* banner */
+.container_content {
+  margin-top: 3rem;
+  .container_box {
+    width: 65%;
+    margin: 0 auto;
+    h4 {
+      font-size: 1.8rem;
+      font-family: $kor-font;
+    }
+    .content_inner {
+      height: 180vh;
+      margin-top: 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      align-content: space-between;
+      li {
+        width: 22%;
+
+        img {
+          width: 100%;
+          border-radius: 3%;
+        }
+        span {
+          font-family: $kor-font;
+          padding-top: 1rem;
+          font-size: 1.2rem;
+          font-weight: bold;
+          display: block;
+          text-overflow: ellipsis;
+          overflow: hidden;
+          white-space: nowrap;
+        }
+        p {
+          padding-top: 0.9rem;
+          color: #999999;
+          font-size: 0.85rem;
+          font-family: $kor-font;
+        }
+      }
+    }
+  }
+}
+/* container_content */
+footer {
+  margin-top: 4rem;
+  padding-bottom: 2rem;
+  .footer_box {
+    width: 64%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    font-family: $kor-font;
+    font-size: 1rem;
+    padding-top: 3rem 0;
+    max-width: 1720px;
+
+    p {
+      color: #999999;
+    }
+    b {
+      color: #000;
+      font-weight: bold;
+    }
+    .footer_button {
+      width: 12rem;
+      background-color: transparent;
+      border: 1px solid #c7c7c7;
+      padding: 0.8rem 0.7rem;
+      border-radius: 0.5rem;
+      font-size: 0.8rem;
+      cursor: pointer;
+      position: relative;
+      .text_icon {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        span,
+        i {
+          font-size: 0.8rem;
+          color: #767676;
+          transition: all 300ms ease;
+        }
+        i.ion {
+          transform: rotate(45deg);
+          transition: all 300ms ease;
+        }
+      }
+
+      li {
+        color: #767676;
+        transition: all 300ms ease;
+        a {
+          color: #767676;
+        }
+      }
+    }
+    .button_over {
+      position: absolute;
+      width: 100%;
+      height: 15rem;
+      left: 0;
+      top: -550%;
+      overflow: hidden;
+      .button_list.on {
+        transform: translateY(0px);
+        transition: all 900ms ease;
+      }
+      .button_list {
+        background-color: white;
+        border-radius: 2%;
+        border: 1px solid #c7c7c7;
+        width: 100%;
+        height: 15rem;
+        transform: translateY(245px);
+        transition: all 900ms ease;
+        display: flex;
+        flex-direction: column;
+        align-content: space-between;
+        li {
+          width: 100%;
+          height: 100%;
+
+          a {
+            font-family: $kor-font;
+            font-size: 1rem;
+            padding: 1.2rem 0.3rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@import "./sub5_media.scss";

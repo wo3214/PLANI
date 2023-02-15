@@ -1,0 +1,468 @@
+@charset "UTF-8";
+@import url(./reset.css);
+/*  reset css */
+/* keyframes  */
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300;1,400;1,500&family=Noto+Sans+KR&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap");
+@import url(./reset.css);
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300;1,400;1,500&family=Noto+Sans+KR&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap");
+@font-face {
+  font-family: quentin;
+  src: url(../font/Quentin.woff);
+}
+/* font family */
+/* 변수 */
+.container_nav_box {
+  margin-top: 4rem;
+}
+
+.container_text_button {
+  width: 65%;
+  margin: 0 auto;
+  /* display: flex; */
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1720px;
+}
+.container_text_button h2 {
+  font-family: "karla";
+  font-size: 4.688rem;
+}
+.container_text_button h2 b {
+  color: #04a6e1;
+}
+.container_text_button span {
+  font-size: 2.5rem;
+  font-family: "Noto Sans KR";
+  display: inline-block;
+  font-weight: 300;
+  margin-top: 1rem;
+  padding-left: 0.3rem;
+}
+
+/* container_nav_box */
+.container02_box {
+  margin-top: 5rem;
+}
+.container02_box div {
+  width: 89%;
+  margin: 0 auto;
+}
+.container02_box div .position_box {
+  width: 100%;
+  position: relative;
+}
+.container02_box div img {
+  width: 100%;
+  height: 100%;
+}
+.container02_box div a {
+  background: #000;
+  color: white;
+  padding: 0.6em 1em;
+  font-size: 1.1rem;
+  border-radius: 1rem;
+}
+.container02_box div a:hover {
+  background-color: #04a6e1;
+  transform: translateY(-10%);
+  transition: all 300ms ease;
+}
+.container02_box div a:hover i {
+  color: #04a6e1;
+  transition: all 300ms ease;
+}
+.container02_box div a span {
+  position: relative;
+}
+.container02_box div a i {
+  position: absolute;
+  bottom: -85%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #000;
+}
+.container02_box div .btn01 {
+  position: absolute;
+  top: 58%;
+  left: 14.8%;
+}
+.container02_box div .btn02 {
+  position: absolute;
+  top: 46%;
+  left: 27.8%;
+}
+.container02_box div .btn03 {
+  position: absolute;
+  top: 48%;
+  left: 41.5%;
+}
+.container02_box div .btn04 {
+  position: absolute;
+  top: 30%;
+  left: 43%;
+}
+.container02_box div .btn05 {
+  position: absolute;
+  top: 60%;
+  left: 51%;
+}
+.container02_box div .btn06 {
+  position: absolute;
+  top: 60%;
+  left: 70%;
+}
+.container02_box div .btn07 {
+  position: absolute;
+  top: 43%;
+  left: 65%;
+}
+
+/* cotainer02_box */
+footer {
+  margin-top: 4rem;
+  padding-bottom: 2rem;
+}
+footer .footer_box {
+  width: 64%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  font-family: "Noto Sans KR";
+  font-size: 1rem;
+  padding-top: 3rem 0;
+  max-width: 1720px;
+}
+footer .footer_box p {
+  color: #999999;
+}
+footer .footer_box b {
+  color: #000;
+  font-weight: bold;
+}
+footer .footer_box .footer_button {
+  width: 12rem;
+  background-color: transparent;
+  border: 1px solid #c7c7c7;
+  padding: 0.8rem 0.7rem;
+  border-radius: 0.5rem;
+  font-size: 0.8rem;
+  cursor: pointer;
+  position: relative;
+}
+footer .footer_box .footer_button .text_icon {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .footer_box .footer_button .text_icon span,
+footer .footer_box .footer_button .text_icon i {
+  font-size: 0.8rem;
+  color: #767676;
+  transition: all 300ms ease;
+}
+footer .footer_box .footer_button .text_icon i.ion {
+  transform: rotate(45deg);
+  transition: all 300ms ease;
+}
+footer .footer_box .footer_button li {
+  color: #767676;
+  transition: all 300ms ease;
+}
+footer .footer_box .footer_button li a {
+  color: #767676;
+}
+footer .footer_box .button_over {
+  position: absolute;
+  width: 100%;
+  height: 15rem;
+  left: 0;
+  top: -550%;
+  overflow: hidden;
+}
+footer .footer_box .button_over .button_list.on {
+  transform: translateY(0px);
+  transition: all 900ms ease;
+}
+footer .footer_box .button_over .button_list {
+  background-color: white;
+  border-radius: 2%;
+  border: 1px solid #c7c7c7;
+  width: 100%;
+  height: 15rem;
+  transform: translateY(245px);
+  transition: all 900ms ease;
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+}
+footer .footer_box .button_over .button_list li {
+  width: 100%;
+  height: 100%;
+}
+footer .footer_box .button_over .button_list li a {
+  font-family: "Noto Sans KR";
+  font-size: 1rem;
+  padding: 1.2rem 0.3rem;
+}
+
+/* footer */
+/*  reset css */
+@-webkit-keyframes middle_line {
+  0% {
+    background: #000;
+    width: 0%;
+    left: 0;
+  }
+  50% {
+    background-color: #04a6e1;
+    width: 50%;
+    left: 0;
+  }
+  100% {
+    background-color: #04a6e1;
+    width: 100%;
+    left: 0;
+  }
+}
+@keyframes middle_line {
+  0% {
+    background: #000;
+    width: 0%;
+    left: 0;
+  }
+  50% {
+    background-color: #04a6e1;
+    width: 50%;
+    left: 0;
+  }
+  100% {
+    background-color: #04a6e1;
+    width: 100%;
+    left: 0;
+  }
+}
+/* keyframes  */
+@font-face {
+  font-family: quentin;
+  src: url(../font/Quentin.woff);
+}
+/* font family */
+/* ======================================================== */
+@media (max-width: 1700px) {
+  html {
+    font-size: 12px;
+  }
+  .header_main .header_menu_btn {
+    background: #000;
+    width: 3.8rem;
+    height: 3.8rem;
+    border-radius: 50%;
+  }
+  .header_main .header_menu_btn ul {
+    width: 50%;
+    height: 22%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .header_main .header_menu_btn ul li {
+    width: 100%;
+    background: white;
+    height: 0.13rem;
+  }
+  /* header */
+  .container_nav_box {
+    margin-top: 4rem;
+  }
+  .container_text_button {
+    width: 75%;
+  }
+  /* container */
+  footer .footer_box {
+    width: 75%;
+  }
+}
+/* ======================================PC */
+@media (max-width: 1280px) {
+  html {
+    font-size: 11px;
+  }
+  .header_main {
+    display: flex;
+    width: 94%;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 1.25rem 0;
+  }
+  .header_main .logo a {
+    display: block;
+    width: 6.938rem;
+    height: 2.5rem;
+    background-image: url(../images/main/logo.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+  .header_main .header_menu_btn {
+    background: #000;
+    width: 3.8rem;
+    height: 3.8rem;
+    border-radius: 50%;
+  }
+  .header_main .header_menu_btn ul {
+    width: 50%;
+    height: 22%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .header_main .header_menu_btn ul li {
+    width: 100%;
+    background: white;
+    height: 0.13rem;
+  }
+  /* header */
+  .container02_box {
+    margin-top: 5rem;
+  }
+  .container02_box div {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+/* =================================pc2 */
+@media (max-width: 1000px) {
+  .header_main {
+    display: flex;
+    width: 94%;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 1.25rem 0;
+  }
+  .header_main .logo a {
+    display: block;
+    width: 6.938rem;
+    height: 2.5rem;
+    background-image: url(../images/main/logo.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+  .header_main .header_menu_btn {
+    background: #000;
+    width: 3.3rem;
+    height: 3.3rem;
+    border-radius: 50%;
+  }
+  .header_main .header_menu_btn ul {
+    width: 50%;
+    height: 22%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .header_main .header_menu_btn ul li {
+    width: 100%;
+    background: white;
+    height: 0.13rem;
+  }
+  /* header */
+  .container_nav_box {
+    margin-top: 4rem;
+  }
+  .container_text_button {
+    width: 90%;
+  }
+  /* container */
+  footer .footer_box {
+    width: 90%;
+  }
+}
+/* ===========================================tablet */
+@media (max-width: 768px) {
+  .header_main {
+    display: flex;
+    width: 94%;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 1.25rem 0;
+  }
+  .header_main .logo a {
+    display: block;
+    width: 6.938rem;
+    height: 2.5rem;
+    background-image: url(../images/main/logo.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+  .header_main .header_menu_bar {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    display: none;
+    font-size: 1.25rem;
+  }
+  .header_main .header_menu_bar li {
+    font-size: 1em;
+    font-family: "karla";
+    font-weight: 500;
+    transition: 0.5s;
+  }
+  .header_main .header_menu_bar li:hover {
+    background-color: #04a6e1;
+    border-radius: 10%;
+    opacity: 0.8;
+  }
+  .header_main .header_menu_bar li:hover a {
+    color: white;
+  }
+  .header_main .header_menu_bar li a {
+    transition: 0.5s;
+  }
+  .header_main .header_menu_btn {
+    background: #000;
+    width: 2.8rem;
+    height: 2.8rem;
+    border-radius: 50%;
+  }
+  .header_main .header_menu_btn ul {
+    width: 50%;
+    height: 22%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .header_main .header_menu_btn ul li {
+    width: 100%;
+    background: white;
+    height: 0.13rem;
+  }
+  /* header */
+  .container02_box div a {
+    font-size: 0.8rem;
+  }
+  .container02_box div .btn05 {
+    top: 70%;
+  }
+  /*  */
+  footer .footer_box {
+    width: 90%;
+    flex-wrap: wrap;
+    font-size: 1.2rem;
+  }
+  footer .footer_box .footer_button {
+    margin: 0 auto;
+    margin-top: 1rem;
+  }
+}
+/* ==========================================mobile *//*# sourceMappingURL=sub2.css.map */

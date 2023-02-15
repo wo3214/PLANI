@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>plani_main</title>
+    <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script defer src="hamlist.js"></script>
+  </head>
+  <body>
+    <!-- header  -->
+    <main>
+      <section class="main_container">
+        <button class="container_side_btn">플랜아이는</button>
+        <article class="main_inner">
+          <div class="main_text">
+            <span class="slide_text swiper mySwiper">
+              <ul class="swiper-wrapper">
+                <li class="swiper-slide">지능을</li>
+                <li class="swiper-slide">정보를</li>
+                <li class="swiper-slide">본질을</li>
+                <li class="swiper-slide">기록을</li>
+                <li class="swiper-slide">문장을</li>
+                <li class="swiper-slide">자료를</li>
+              </ul>
+              <span> 쉽고</span></span
+            >
+            <span>가치있게<b>.</b></span>
+          </div>
+          <div class="sub_text">
+            <span>knowledge</span>
+            <p>
+              플랜아이는 <br />
+              기획, 디자인, 프로그램의 역량을 활용하여<br />
+              정보를 쉽게 표현하고 명확하게 전달하는 것을 <br />
+              가장 잘 하는 회사입니다.
+            </p>
+          </div>
+        </article>
+        <span class="middle_line"></span>
+      </section>
+    </main>
+    <!-- main -->
+
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        direction: "vertical",
+        spaceBetween: 31,
+        autoplay: {
+          delay: 5000,
+          disableOnInteraction: false,
+        },
+      });
+    </script>
+  </body>
+</html>
